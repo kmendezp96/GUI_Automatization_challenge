@@ -14,7 +14,7 @@ Feature: Consult Joiners
     Then I should see a list of the joiners that include those specific "<characters>" in their names
     Examples:
     | characters  |
-    | Luis        |
+    | Fab         |
     #| Fab         |
     #| andres algo |
 
@@ -25,3 +25,8 @@ Feature: Consult Joiners
       | name          |
       | Fabi          |
      # | Luis 2        |
+
+  Scenario: Remove Filter joiner
+    And a filter of Joiners using "andre"  was made
+    When I choose clear option
+    Then I should see the list of all existing Joiners included "Maria"

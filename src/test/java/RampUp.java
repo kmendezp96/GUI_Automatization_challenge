@@ -7,7 +7,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
         //glue =  "src/test/resources/steps",
-        features = "src/test/resources/consultJoiners.feature")
+        features = "src/test/resources")
 public class RampUp {
     /*@Test
     public void Test() {

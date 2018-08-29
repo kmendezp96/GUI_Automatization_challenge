@@ -15,7 +15,7 @@ public class LoginPage extends BasePage {
     @FindBy(how = How.NAME, using = "password")
     private WebElement passwordInput;
     private WebDriver driver;
-    private static LoginPage loginPage;
+    /*private static LoginPage loginPage;
 
     public  static LoginPage getLoginPage(WebDriver driver) {
 
@@ -23,9 +23,9 @@ public class LoginPage extends BasePage {
             loginPage=new LoginPage(driver);
         }
         return loginPage;
-    }
+    }*/
 
-    private LoginPage(WebDriver driver){
+    public LoginPage(WebDriver driver){
         super(driver);
         this.driver = driver;
     }
@@ -38,6 +38,6 @@ public class LoginPage extends BasePage {
         wait.until(ExpectedConditions.presenceOfElementLocated(By.name("logIn")));
         driver.findElement(By.name("logIn")).click();
 
-        return  DashBoardPage.getDashBoardPage(driver);
+        return  new DashBoardPage(driver);
     }
 }

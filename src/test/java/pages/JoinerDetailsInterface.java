@@ -12,12 +12,18 @@ import java.util.concurrent.TimeUnit;
 
 public class JoinerDetailsInterface extends BasePage{
     private WebDriver driver;
+    WebDriverWait wait;
+    //@FindBy(how = How.XPATH, using = "//button[@class, 'submit' and text()='Clonse']")
     @FindBy(how = How.CSS, using = "div[class='ui large scrolling modal transition visible active modal-class']")
     private WebElement detailsPopUp;
-    @FindBy(how = How.CSS, using = "button[class='ui button ui primary button']")
+
+    @FindBy(how = How.XPATH, using = "//button[contains(.,'Close')]")
     private WebElement closeButton;
 
-    private static JoinerDetailsInterface joinerDetailsInterface;
+    @FindBy(how = How.CSS, using = "div[class='accordion ui details-joiner']")
+    private WebElement accordion;
+
+    /*private static JoinerDetailsInterface joinerDetailsInterface;
 
     public  static JoinerDetailsInterface getJoinerDetailsInterface(WebDriver driver) {
 
@@ -25,12 +31,12 @@ public class JoinerDetailsInterface extends BasePage{
             joinerDetailsInterface=new JoinerDetailsInterface(driver);
         }
         return joinerDetailsInterface;
-    }
+    }*/
 
-    private JoinerDetailsInterface(WebDriver driver){
+    public JoinerDetailsInterface(WebDriver driver){
         super(driver);
         this.driver = driver;
-        WebDriverWait wait = new WebDriverWait(driver, Long.parseLong("10"));
+        wait = new WebDriverWait(this.driver, Long.parseLong("10"));
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div[class='ui large scrolling modal transition visible active modal-class']")));
     }
 
@@ -39,12 +45,17 @@ public class JoinerDetailsInterface extends BasePage{
     }
 
     public void goBack(){
-        WebDriverWait wait = new WebDriverWait(driver, Long.parseLong("10"));
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("button[class='ui button ui primary button']")));
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[contains(.,'Close')]")));
         closeButton.click();
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        this.detailsPopUp = driver.findElement(By.cssSelector("div[class='ui large scrolling modal transition visible active modal-class']"));
-        //return driver.findElement(By.cssSelector("div[class='ui large scrolling modal transition visible active modal-class']"));
+
     }
+
+/*
+    public void checkAssignedTasks(){
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div[class='accordion ui details-joiner']")));
+        accordion = driver.findElement(By.cssSelector("div[class='accordion ui details-joiner']"));
+    }*/
 
 }

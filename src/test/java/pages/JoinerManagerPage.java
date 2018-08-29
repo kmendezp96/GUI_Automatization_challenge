@@ -15,17 +15,20 @@ public class JoinerManagerPage extends BasePage {
     @FindBy(how = How.CLASS_NAME, using = "prompt")
     private WebElement searchInput;
 
-    private static JoinerManagerPage joinerManagerPage;
+    @FindBy(how = How.CSS, using = "i[class='trash alternate outline link icon']")
+    private WebElement DelFilter;
 
-    public  static JoinerManagerPage getJoinerManagerPage(WebDriver driver) {
+    //private static JoinerManagerPage joinerManagerPage;
+
+    /*public  static JoinerManagerPage getJoinerManagerPage(WebDriver driver) {
 
         if (joinerManagerPage==null) {
             joinerManagerPage=new JoinerManagerPage(driver);
         }
         return joinerManagerPage;
-    }
+    }*/
 
-    private JoinerManagerPage(WebDriver driver){
+    public JoinerManagerPage(WebDriver driver){
         super(driver);
         this.driver = driver;
     }
@@ -45,6 +48,13 @@ public class JoinerManagerPage extends BasePage {
         WebDriverWait wait = new WebDriverWait(driver, Long.parseLong("10"));
         wait.until(ExpectedConditions.presenceOfElementLocated(By.partialLinkText(joiner)));
         driver.findElement(By.partialLinkText(joiner)).click();
-        return JoinerDetailsInterface.getJoinerDetailsInterface(driver);
+        return new JoinerDetailsInterface(driver);
     }
+
+    public void removeFilter(){
+        WebDriverWait wait = new WebDriverWait(driver, Long.parseLong("10"));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("i[class='trash alternate outline link icon']")));
+        DelFilter.click();
+    }
+
 }
