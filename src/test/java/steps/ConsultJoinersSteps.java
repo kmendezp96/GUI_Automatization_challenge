@@ -1,13 +1,11 @@
 package steps;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import helpers.RunnerHelper;
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -21,12 +19,11 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ConsultJoinersSteps extends RunnerHelper {
-     WebDriver driver = new ChromeDriver();
-     WebDriverWait wait = new WebDriverWait(driver, Long.parseLong("10"));
+    WebDriver driver = new ChromeDriver();
+    WebDriverWait wait = new WebDriverWait(driver, Long.parseLong("10"));
 
     DashBoardPage dashBoardPage;
     JoinerManagerPage joinerManagerPage;
@@ -42,7 +39,7 @@ public class ConsultJoinersSteps extends RunnerHelper {
 
     @And("^i am on the Joiner Manager interface$")
     public void iAmOnTheJoinerManagerInterface(){
-        joinerManagerPage = dashBoardPage.go();
+        joinerManagerPage = dashBoardPage.goJoinerManager();
     }
 
     @And("^there are joiners created$")
@@ -66,6 +63,7 @@ public class ConsultJoinersSteps extends RunnerHelper {
 
     @When("^I choose the joiners \"([^\"]*)\"$")
     public void iChooseTheJoiners(String name){
+        joinerManagerPage.search(name);
         joinerDetailsInterface = joinerManagerPage.goJoinersDetails(name);
     }
 

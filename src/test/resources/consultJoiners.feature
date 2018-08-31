@@ -13,20 +13,20 @@ Feature: Consult Joiners
     When I enter "<characters>" in the search field
     Then I should see a list of the joiners that include those specific "<characters>" in their names
     Examples:
-    | characters  |
-    | Fab         |
-    #| Fab         |
-    #| andres algo |
+    | characters   |
+    | Kevin Mendez |
+    | Hei          |
+    | River        |
 
   Scenario Outline: Access to view a Joiners’ details
     When I choose the joiners "<name>"
     Then I should see the interface with the Joiners’ information
     Examples:
-      | name          |
-      | Fabi          |
-     # | Luis 2        |
+      | name             |
+      | Marcelo          |
+      | Harvey Hettinger |
 
   Scenario: Remove Filter joiner
-    And a filter of Joiners using "andre"  was made
+    And a filter of Joiners using "Andre"  was made
     When I choose clear option
-    Then I should see the list of all existing Joiners included "Maria"
+    Then I should see the list of all existing Joiners included "Heiner"

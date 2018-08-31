@@ -17,7 +17,7 @@ public class RampUp {
         LoginPage loginPage = new LoginPage(driver);
         DashBoardPage dashBoard = loginPage.login(email, password);
 
-        JoinerManagerPage ap = dashBoard.go();
+        JoinerManagerPage ap = dashBoard.goJoinerManager();
         //ap.search(query);
 
         assertThat("Title should match the expected",

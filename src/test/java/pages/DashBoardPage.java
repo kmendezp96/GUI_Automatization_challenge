@@ -13,6 +13,9 @@ public class DashBoardPage extends BasePage {
 
     @FindBy(how = How.CSS, using = "a[class='item joiner-manager']")
     private WebElement itemJoinerManager;
+
+    @FindBy(how = How.CSS, using = "a[class='item create-joiner']")
+    private WebElement itemCreateJoiner;
     /*private static DashBoardPage dashBoardPage;
 
     public  static DashBoardPage getDashBoardPage(WebDriver driver) {
@@ -28,12 +31,21 @@ public class DashBoardPage extends BasePage {
         this.driver = driver;
     }
 
-    public JoinerManagerPage go() {
+    public JoinerManagerPage goJoinerManager() {
         WebDriverWait wait = new WebDriverWait(driver, Long.parseLong("10"));
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("a[class='item joiner-manager']")));
         //itemJoinerManager = driver.findElement(By.cssSelector("a[class='item joiner-manager']"));
         itemJoinerManager.click();
         return new JoinerManagerPage(driver);
+
+    }
+
+    public CreateJoinerPage goCreateJoiner() {
+        WebDriverWait wait = new WebDriverWait(driver, Long.parseLong("10"));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("a[class='item create-joiner']")));
+        //itemJoinerManager = driver.findElement(By.cssSelector("a[class='item joiner-manager']"));
+        itemCreateJoiner.click();
+        return new CreateJoinerPage(driver);
 
     }
 }

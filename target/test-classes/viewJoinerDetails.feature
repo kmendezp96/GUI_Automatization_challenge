@@ -5,8 +5,8 @@ Feature: Consult Joiners
 
   Background:
     Given I am logged with email: "admin@endava.com" and password "admin"
-    And the joiner "Fabian" is created
-    And i am on the view joiner details interface of "Fabian"
+    And the joiner "Kevin" is created
+    And i am on the view joiner details interface of "Kevin"
 
 
 

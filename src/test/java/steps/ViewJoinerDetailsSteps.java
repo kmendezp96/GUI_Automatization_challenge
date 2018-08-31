@@ -1,6 +1,5 @@
 package steps;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -40,9 +39,10 @@ public class ViewJoinerDetailsSteps {
     }
 
     @And("^the joiner \"([^\"]*)\" is created$")
-    public void theJoinerIsCreated(String arg0){
-        joinerManagerPage = dashBoardPage.go();
+    public void theJoinerIsCreated(String name){
+        joinerManagerPage = dashBoardPage.goJoinerManager();
         wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(By.tagName("tr"),6));
+        joinerManagerPage.search(name);
     }
 
 

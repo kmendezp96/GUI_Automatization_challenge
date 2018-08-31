@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <title>Access to view a Joiners’ details</title>
+    <title>Populate searching fields according to a selected discipline option</title>
 <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
@@ -55,7 +55,7 @@
         <span class="breadcrumbs">
             <a href="index.html" class="breadcrumbs">Home</a>
 
-        > Access to view a Joiners&rsquo; details
+        > Populate searching fields according to a selected discipline option
         </span>
         </div>
         <div class="rightbg"></div>
@@ -73,7 +73,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 31-08-2018 14:11</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 31-08-2018 14:09</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -88,13 +88,12 @@
                             <div>
                                 <h3 class="discreet-story-header">
                                     <i class="fa fa-2x fa-comments-o"></i>
-                                    <span class="story-header-title">Consult Joiners</span>
+                                    <span class="story-header-title">As An Onboarding Manager</span>
                                 </h3>
 
                                 <div class="discreet-requirement-narrative-title">
-                                As an Onboarding manager
-I want to see the joiners list
-So that It can see all created joiner
+                                I want to select an option on the following auto-populated fields at the creation joiner moment
+So that I am able to enter consistent information in those fields
                                 </div>
                             </div>
 
@@ -111,7 +110,7 @@ So that It can see all created joiner
                             <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span>
                             <span class="test-case-title">
                                     <span class="success-color">
-                                    Access to view a Joiners&rsquo; details
+                                    Populate searching fields according to a selected discipline option
                                         <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -127,7 +126,7 @@ So that It can see all created joiner
     <div class="story-title">
         <h3 class="story-header">Scenario Outline</h3>
 
-        <div class="scenario">When I choose the joiners "&lt;name&gt;"<br>Then I should see the interface with the Joiners’ information</div>
+        <div class="scenario">When I select one "&lt;discipline&gt;"<br>Then the fields: "&lt;Line Manager&gt;", "&lt;Career Coach&gt;" and "&lt;Buddy&gt;"have to be auto-populated with the belonged default value</div>
 
     </div>
 
@@ -140,18 +139,44 @@ So that It can see all created joiner
                 <thead>
                 <tr>
                     <th>#</th>
-                        <th>Name</th>
+                        <th>Discipline</th>
+                        <th>Line Manager</th>
+                        <th>Career Coach</th>
+                        <th>Buddy</th>
                 </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td class="test-SUCCESS"><a href="#0">1</a></td>
-                            <td class="test-SUCCESS"><a href="#0">Marcelo</a>
+                            <td class="test-SUCCESS"><a href="#0">Testing</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#0">Andr&eacute;s Calle</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#0">Gina Acosta</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#0">Andr&eacute;s Rinc&oacute;n</a>
                             </td>
                     </tr>
                     <tr>
                         <td class="test-SUCCESS"><a href="#1">2</a></td>
-                            <td class="test-SUCCESS"><a href="#1">Harvey Hettinger</a>
+                            <td class="test-SUCCESS"><a href="#1">PDR</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#1">Felipe Vila</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#1">Ra&uacute;l Fandino</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#1">Germ&aacute;n Valencia</a>
+                            </td>
+                    </tr>
+                    <tr>
+                        <td class="test-SUCCESS"><a href="#2">3</a></td>
+                            <td class="test-SUCCESS"><a href="#2">Project management</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#2">Luz Fern&aacute;ndez</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#2">Angy Mu&ntilde;oz</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#2">V&iacute;ctor Mej&iacute;a</a>
                             </td>
                     </tr>
                 </tbody>
@@ -188,14 +213,14 @@ So that It can see all created joiner
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block;">
                             <span class="top-level-step">
-                                Access to view a Joiners’ details #1: {name=Marcelo}
+                                Populate searching fields according to a selected discipline option #1: {discipline=Testing, Line Manager=Andrés Calle, Career Coach=Gina Acosta, Buddy=Andrés Rincón}
                             </span>
                             </a>
 
                         </div>
                     </td>
                     <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">37.65s</span></td>
+                    <td width="100"><span class="top-level-step">20.95s</span></td>
                 </tr>
                     <tr>
                     <td colspan="5">
@@ -210,13 +235,13 @@ So that It can see all created joiner
                     <td>
                         <div class="step-description">
                             <span class="nested-group-step">
-                                Given I am already logged with email: "admin@endava.com" and password "admin"
+                                Given I am already logged using email: "admin@endava.com" and password "admin"
                             </span>
 
                         </div>
                     </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">32.67s</span></td>
+                    <td width="100"><span class="nested-group-step">16.99s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
@@ -227,13 +252,13 @@ So that It can see all created joiner
                     <td>
                         <div class="step-description">
                             <span class="nested-group-step">
-                                And i am on the Joiner Manager interface
+                                And i am on the create joiner interface
                             </span>
 
                         </div>
                     </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">0.65s</span></td>
+                    <td width="100"><span class="nested-group-step">0.66s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
@@ -244,13 +269,13 @@ So that It can see all created joiner
                     <td>
                         <div class="step-description">
                             <span class="nested-group-step">
-                                And there are joiners created
+                                When I select one "Testing"
                             </span>
 
                         </div>
                     </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">1.23s</span></td>
+                    <td width="100"><span class="nested-group-step">1.33s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
@@ -261,30 +286,13 @@ So that It can see all created joiner
                     <td>
                         <div class="step-description">
                             <span class="nested-group-step">
-                                When I choose the joiners "Marcelo"
+                                Then the fields: "Andrés Calle", "Gina Acosta" and "Andrés Rincón"have to be auto-populated with the belonged default value
                             </span>
 
                         </div>
                     </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">1.41s</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">
-                                Then I should see the interface with the Joiners’ information
-                            </span>
-
-                        </div>
-                    </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">1.69s</span></td>
+                    <td width="100"><span class="nested-group-step">1.95s</span></td>
                 </tr>
 
                     </table>
@@ -304,14 +312,14 @@ So that It can see all created joiner
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
                                style="display:block;">
                             <span class="top-level-step">
-                                Access to view a Joiners’ details #2: {name=Harvey Hettinger}
+                                Populate searching fields according to a selected discipline option #2: {discipline=PDR, Line Manager=Felipe Vila, Career Coach=Raúl Fandino, Buddy=Germán Valencia}
                             </span>
                             </a>
 
                         </div>
                     </td>
                     <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">14.51s</span></td>
+                    <td width="100"><span class="top-level-step">17.49s</span></td>
                 </tr>
                     <tr>
                     <td colspan="5">
@@ -326,13 +334,13 @@ So that It can see all created joiner
                     <td>
                         <div class="step-description">
                             <span class="nested-group-step">
-                                Given I am already logged with email: "admin@endava.com" and password "admin"
+                                Given I am already logged using email: "admin@endava.com" and password "admin"
                             </span>
 
                         </div>
                     </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">8.59s</span></td>
+                    <td width="100"><span class="nested-group-step">13s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
@@ -343,13 +351,13 @@ So that It can see all created joiner
                     <td>
                         <div class="step-description">
                             <span class="nested-group-step">
-                                And i am on the Joiner Manager interface
+                                And i am on the create joiner interface
                             </span>
 
                         </div>
                     </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">0.76s</span></td>
+                    <td width="100"><span class="nested-group-step">0.67s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
@@ -360,13 +368,13 @@ So that It can see all created joiner
                     <td>
                         <div class="step-description">
                             <span class="nested-group-step">
-                                And there are joiners created
+                                When I select one "PDR"
                             </span>
 
                         </div>
                     </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">1.7s</span></td>
+                    <td width="100"><span class="nested-group-step">1.25s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
@@ -377,13 +385,61 @@ So that It can see all created joiner
                     <td>
                         <div class="step-description">
                             <span class="nested-group-step">
-                                When I choose the joiners "Harvey Hettinger"
+                                Then the fields: "Felipe Vila", "Raúl Fandino" and "Germán Valencia"have to be auto-populated with the belonged default value
                             </span>
 
                         </div>
                     </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">1.9s</span></td>
+                    <td width="100"><span class="nested-group-step">2.57s</span></td>
+                </tr>
+
+                    </table>
+                    </td>
+                    <tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        <a name="2"/>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection2 success-icon"
+                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
+                            </a>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
+                               style="display:block;">
+                            <span class="top-level-step">
+                                Populate searching fields according to a selected discipline option #3: {discipline=Project management, Line Manager=Luz Fernández, Career Coach=Angy Muñoz, Buddy=Víctor Mejía}
+                            </span>
+                            </a>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">15.2s</span></td>
+                </tr>
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection2" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">
+                                Given I am already logged using email: "admin@endava.com" and password "admin"
+                            </span>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">10.73s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
@@ -394,13 +450,47 @@ So that It can see all created joiner
                     <td>
                         <div class="step-description">
                             <span class="nested-group-step">
-                                Then I should see the interface with the Joiners’ information
+                                And i am on the create joiner interface
                             </span>
 
                         </div>
                     </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">1.57s</span></td>
+                    <td width="100"><span class="nested-group-step">0.72s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">
+                                When I select one "Project management"
+                            </span>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.23s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">
+                                Then the fields: "Luz Fernández", "Angy Muñoz" and "Víctor Mejía"have to be auto-populated with the belonged default value
+                            </span>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">2.52s</span></td>
                 </tr>
 
                     </table>
@@ -409,7 +499,7 @@ So that It can see all created joiner
                 <tr class="test-SUCCESS">
                     <td colspan="2"></td>
                     <td width="100"><span class="top-level-step"><em>SUCCESS</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>52.66s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>55.35s</em></span></td>
                 </tr>
 
             </table>
