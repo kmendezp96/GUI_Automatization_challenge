@@ -7,7 +7,6 @@ import cucumber.api.java.en.When;
 import helpers.Checker;
 import helpers.DriverGenerator;
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -19,9 +18,7 @@ import pages.LoginPage;
 
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.core.IsNull.nullValue;
 
 public class ViewJoinerDetailsSteps {
     WebDriver driver = new ChromeDriver();

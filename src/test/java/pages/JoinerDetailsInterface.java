@@ -18,7 +18,6 @@ import static net.serenitybdd.rest.SerenityRest.given;
 public class JoinerDetailsInterface extends BasePage{
     private WebDriver driver;
     WebDriverWait wait;
-    //@FindBy(how = How.XPATH, using = "//button[@class, 'submit' and text()='Clonse']")
     @FindBy(how = How.CSS, using = "div[class='ui large scrolling modal transition visible active modal-class']")
     private WebElement detailsPopUp;
 
@@ -61,16 +60,13 @@ public class JoinerDetailsInterface extends BasePage{
     }*/
 
     public void goBack(){
-
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[contains(.,'Close')]")));
         closeButton.click();
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-
     }
 
 
     public int checkAssignedTasks(){
-
         wait.until(ExpectedConditions.presenceOfElementLocated(By.name("email")));
         RequestSpecification request = given().contentType("application/json");
         Response response = request.when().get("http://35.173.104.34:9003/api/rampups?owner="+emailField);

@@ -1,21 +1,19 @@
 package steps;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import helpers.DriverGenerator;
 import helpers.RunnerHelper;
+import helpers.DriverGenerator;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.DashBoardPage;
 import pages.JoinerDetailsInterface;
 import pages.JoinerManagerPage;
 import pages.LoginPage;
-
+import org.openqa.selenium.support.ui.WebDriverWait;
 import static org.hamcrest.CoreMatchers.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 import org.openqa.selenium.WebDriver;

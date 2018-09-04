@@ -1,12 +1,10 @@
 package steps;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.*;
-import helpers.DriverGenerator;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import helpers.DriverGenerator;
 import pages.*;
 
 import static org.hamcrest.CoreMatchers.is;

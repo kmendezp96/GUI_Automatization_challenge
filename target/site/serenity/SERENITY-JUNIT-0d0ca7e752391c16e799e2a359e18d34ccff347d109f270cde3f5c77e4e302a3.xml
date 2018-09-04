@@ -1,1 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Consult Joiners" skipped="0" tests="3" time="48.64" timestamp="2018-09-04T16:34:12.802-05:00[America/Bogota]"><testcase name="Filter joiner"/><testcase name="Access to view a Joiners’ details"/><testcase name="Remove Filter joiner"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Consult Joiners" skipped="0" tests="3" time="97.56" timestamp="2018-09-04T16:47:52.849-05:00[America/Bogota]"><testcase name="Filter joiner"/><testcase name="Access to view a Joiners’ details"><error message="Cannot locate an element using By.cssSelector: div[class='ui large scrolling modal transition visible active modal-class']&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'EN911016', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'&#10;Driver info: driver.version: unknown&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'EN911016', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">Cannot locate an element using By.cssSelector: div[class='ui large scrolling modal transition visible active modal-class']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'EN911016', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'EN911016', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown</error><system-err>Cannot locate an element using By.cssSelector: div[class='ui large scrolling modal transition visible active modal-class']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'EN911016', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'EN911016', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown&#13;
+pages.JoinerDetailsInterface.getDetailsPopUp(JoinerDetailsInterface.java:53)&#13;
+steps.ConsultJoinersSteps.iShouldSeeTheInterfaceWithTheJoinersInformation(ConsultJoinersSteps.java:75)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+</system-err></testcase><testcase name="Remove Filter joiner"/></testsuite>

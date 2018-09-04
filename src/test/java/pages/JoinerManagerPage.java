@@ -53,7 +53,6 @@ public class JoinerManagerPage extends BasePage {
 
     public String search(String query) {
         wait.until(ExpectedConditions.presenceOfElementLocated(By.className("prompt")));
-        //searchInput = driver.findElement(By.className("prompt"));
         wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(By.tagName("tr"),6));
         searchInput.sendKeys(query);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.partialLinkText(query)));
@@ -76,7 +75,6 @@ public class JoinerManagerPage extends BasePage {
     public boolean checkNumberOfJoiners(){
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div[class='ui pagination menu']")));
         List<WebElement> pagButtons = paginationBar.findElements(By.tagName("a"));
-
         String lastPageButtonText = pagButtons.get(pagButtons.size()-3).getText();
         int maxPag = Integer.parseInt(lastPageButtonText);
 

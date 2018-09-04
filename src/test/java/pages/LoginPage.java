@@ -31,7 +31,6 @@ public class LoginPage extends BasePage {
     }
 
     public DashBoardPage login(String email, String password) {
-        //WebElement searchInput = driver.findElement(By.id("searchInput"));
         emailInput.sendKeys(email);
         passwordInput.sendKeys(password);
         WebDriverWait wait = new WebDriverWait(driver, Long.parseLong("10"));

@@ -34,7 +34,6 @@ public class DashBoardPage extends BasePage {
     public JoinerManagerPage goJoinerManager() {
         WebDriverWait wait = new WebDriverWait(driver, Long.parseLong("10"));
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("a[class='item joiner-manager']")));
-        //itemJoinerManager = driver.findElement(By.cssSelector("a[class='item joiner-manager']"));
         itemJoinerManager.click();
         return new JoinerManagerPage(driver);
 
@@ -43,7 +42,6 @@ public class DashBoardPage extends BasePage {
     public CreateJoinerPage goCreateJoiner() {
         WebDriverWait wait = new WebDriverWait(driver, Long.parseLong("10"));
         wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("a[class='item create-joiner']")));
-        //itemJoinerManager = driver.findElement(By.cssSelector("a[class='item joiner-manager']"));
         itemCreateJoiner.click();
         return new CreateJoinerPage(driver);
 
