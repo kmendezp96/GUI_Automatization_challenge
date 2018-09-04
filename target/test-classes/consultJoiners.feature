@@ -15,7 +15,7 @@ Feature: Consult Joiners
     Examples:
     | characters   |
     | Kevin Mendez |
-    | Hei          |
+    | Har         |
     | River        |
 
   Scenario Outline: Access to view a Joiners’ details
@@ -29,4 +29,4 @@ Feature: Consult Joiners
   Scenario: Remove Filter joiner
     And a filter of Joiners using "Andre"  was made
     When I choose clear option
-    Then I should see the list of all existing Joiners included "Heiner"
+    Then I should see the list of all existing Joiners included "Harvey"

@@ -4,6 +4,7 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import helpers.DriverGenerator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -23,6 +24,7 @@ import static org.hamcrest.core.IsNull.nullValue;
 
 public class ViewJoinerDetailsSteps {
     WebDriver driver = new ChromeDriver();
+    //WebDriver driver = DriverGenerator.generateDriver();
     WebDriverWait wait = new WebDriverWait(driver, Long.parseLong("10"));
 
     DashBoardPage dashBoardPage;

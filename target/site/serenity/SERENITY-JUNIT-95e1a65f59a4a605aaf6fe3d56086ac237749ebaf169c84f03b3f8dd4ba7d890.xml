@@ -1,1 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Consult Joiners" skipped="0" tests="1" time="19.46" timestamp="2018-08-29T13:24:37.705-05:00[America/Bogota]"><testcase name="Go back to joiner manager interface"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Consult Joiners" skipped="0" tests="2" time="52.76" timestamp="2018-08-31T16:45:09.590-05:00[America/Bogota]"><testcase name="Go back to joiner manager interface"><error message="Element is not currently visible and so may not be interacted with&#10;Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'&#10;System info: host: 'WIN-R1JBAO1CNPS', ip: '172.20.35.210', os.name: 'Windows Server 2008 R2', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_91'&#10;Driver info: driver.version: unknown&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'EN911016', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'&#10;Driver info: driver.version: unknown&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'EN911016', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.ElementNotVisibleException">Element is not currently visible and so may not be interacted with
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'WIN-R1JBAO1CNPS', ip: '172.20.35.210', os.name: 'Windows Server 2008 R2', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_91'
+Driver info: driver.version: unknown
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'EN911016', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'EN911016', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown</error><system-err>Element is not currently visible and so may not be interacted with
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'WIN-R1JBAO1CNPS', ip: '172.20.35.210', os.name: 'Windows Server 2008 R2', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_91'
+Driver info: driver.version: unknown
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'EN911016', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'EN911016', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: driver.version: unknown&#13;
+&lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous8369136527270270882webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)&#13;
+&lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous8369136527270270882webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)&#13;
+&lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous8369136527270270882webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)&#13;
+&lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous8369136527270270882webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)&#13;
+&lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous8369136527270270882webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)&#13;
+</system-err></testcase><testcase name="No tasks"/></testsuite>

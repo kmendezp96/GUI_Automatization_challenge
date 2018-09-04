@@ -2,6 +2,7 @@ package steps;
 
 import cucumber.api.PendingException;
 import cucumber.api.java.en.*;
+import helpers.DriverGenerator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,6 +14,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 public class JoinerCreationSteps {
     WebDriver driver = new ChromeDriver();
+    //WebDriver driver = DriverGenerator.generateDriver();
     WebDriverWait wait = new WebDriverWait(driver, Long.parseLong("10"));
 
     DashBoardPage dashBoardPage;
@@ -39,7 +41,8 @@ public class JoinerCreationSteps {
 
 
     @Then("^the fields: \"([^\"]*)\", \"([^\"]*)\" and \"([^\"]*)\"have to be auto-populated with the belonged default value$")
-    public void theFieldsAndHaveToBeAutoPopulatedWithTheBelongedDefaultValue(String LineManager, String careerCoach, String buddy) {
+    public void theFieldsAndHaveToBeAutoPopulatedWithTheBelongedDefaultValue(String LineManager,
+                                                                             String careerCoach, String buddy) {
         assertThat("The joiners details must not be visible",
                 createJoinerPage.CheckAutoPopulatedFields(LineManager, careerCoach, buddy), is(true));
         driver.quit();

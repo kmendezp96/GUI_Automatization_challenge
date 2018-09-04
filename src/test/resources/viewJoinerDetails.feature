@@ -1,4 +1,4 @@
-Feature: Consult Joiners
+Feature: Consult Joiners details
   As an Onboarding manager
   I want to view the details of a specific joiner
   So that It can confirm the joiner was created properly

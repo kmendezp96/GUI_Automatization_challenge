@@ -22,6 +22,8 @@ public class JoinerDetailsInterface extends BasePage{
 
     @FindBy(how = How.CSS, using = "div[class='accordion ui details-joiner']")
     private WebElement accordion;
+    @FindBy(how = How.XPATH, using = "//button[contains(.,'Assign Tasks')]")
+    private WebElement assignButton;
 
     /*private static JoinerDetailsInterface joinerDetailsInterface;
 
@@ -36,13 +38,19 @@ public class JoinerDetailsInterface extends BasePage{
     public JoinerDetailsInterface(WebDriver driver){
         super(driver);
         this.driver = driver;
-        wait = new WebDriverWait(this.driver, Long.parseLong("10"));
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div[class='ui large scrolling modal transition visible active modal-class']")));
+        wait = new WebDriverWait(this.driver, Long.parseLong("30"));
+
     }
 
     public WebElement getDetailsPopUp() {
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div[class='ui large scrolling modal transition visible active modal-class']")));
         return detailsPopUp;
     }
+
+    /*public boolean checkPopUp() {
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[contains(.,'Close')]")));
+        return checkForElementPresence(By.xpath("//button[contains(.,'Close')]")) && checkForElementPresence(By.xpath("//button[contains(.,'Assign Tasks')]"));
+    }*/
 
     public void goBack(){
 

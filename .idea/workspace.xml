@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6419431c-33cf-4326-97d2-0420d18780e5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/CreateJoinerPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/JoinerCreationSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/JoinerCreation.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/helpers/DriverGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RampUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RampUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/DashBoardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/DashBoardPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/JoinerDetailsInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/JoinerDetailsInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/ConsultJoinersSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/ConsultJoinersSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/JoinerCreationSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/JoinerCreationSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/ViewJoinerDetailsSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/ViewJoinerDetailsSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/consultJoiners.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/consultJoiners.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/viewJoinerDetails.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/viewJoinerDetails.feature" afterDir="false" />
@@ -23,10 +21,14 @@
       <change beforePath="$PROJECT_DIR$/target/site/serenity/95e1a65f59a4a605aaf6fe3d56086ac237749ebaf169c84f03b3f8dd4ba7d890.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/95e1a65f59a4a605aaf6fe3d56086ac237749ebaf169c84f03b3f8dd4ba7d890.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/serenity/95e1a65f59a4a605aaf6fe3d56086ac237749ebaf169c84f03b3f8dd4ba7d890.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/95e1a65f59a4a605aaf6fe3d56086ac237749ebaf169c84f03b3f8dd4ba7d890.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-0d0ca7e752391c16e799e2a359e18d34ccff347d109f270cde3f5c77e4e302a3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-0d0ca7e752391c16e799e2a359e18d34ccff347d109f270cde3f5c77e4e302a3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/consultJoiners.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/consultJoiners.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-95e1a65f59a4a605aaf6fe3d56086ac237749ebaf169c84f03b3f8dd4ba7d890.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-95e1a65f59a4a605aaf6fe3d56086ac237749ebaf169c84f03b3f8dd4ba7d890.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-ef486ca2c0b12e70e2c176c994217ba9f75fafae4614d429b3cd675208888086.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/SERENITY-JUNIT-ef486ca2c0b12e70e2c176c994217ba9f75fafae4614d429b3cd675208888086.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/ef486ca2c0b12e70e2c176c994217ba9f75fafae4614d429b3cd675208888086.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/ef486ca2c0b12e70e2c176c994217ba9f75fafae4614d429b3cd675208888086.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/site/serenity/ef486ca2c0b12e70e2c176c994217ba9f75fafae4614d429b3cd675208888086.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/site/serenity/ef486ca2c0b12e70e2c176c994217ba9f75fafae4614d429b3cd675208888086.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/JoinerDetailsInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/JoinerDetailsInterface.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/steps/ConsultJoinersSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/ConsultJoinersSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/steps/JoinerCreationSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/JoinerCreationSteps.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/steps/ViewJoinerDetailsSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/steps/ViewJoinerDetailsSteps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/viewJoinerDetails.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/viewJoinerDetails.feature" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,29 +41,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="JoinerCreation.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/JoinerCreation.feature">
+      <file leaf-file-name="DriverGenerator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/helpers/DriverGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="consultJoiners.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/consultJoiners.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConsultJoinersSteps.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/steps/ConsultJoinersSteps.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-204">
-              <caret line="36" column="57" lean-forward="true" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
+            <state relative-caret-position="-29">
+              <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,14 +53,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JoinerManagerPage.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pages/JoinerManagerPage.java">
+      <file leaf-file-name="ViewJoinerDetailsSteps.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/steps/ViewJoinerDetailsSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="53" column="28" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="28" />
+            <state relative-caret-position="119">
+              <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JoinerCreationSteps.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/steps/JoinerCreationSteps.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="43" column="96" selection-start-line="43" selection-start-column="96" selection-end-line="43" selection-end-column="96" />
             </state>
           </provider>
         </entry>
@@ -123,21 +116,24 @@
         <option value="$PROJECT_DIR$/src/test/java/steps/consultJoinersSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/helpers/WebDriverFacade.java" />
         <option value="$PROJECT_DIR$/src/test/java/helpers/NullWebElement.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/BasePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/steps/GlobalSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/JoinerManagerPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/JoinerDetailsInterface.java" />
-        <option value="$PROJECT_DIR$/src/test/java/steps/ViewJoinerDetailsSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/viewJoinerDetails.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/consultJoiners.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/steps/ConsultJoinersSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/JoinerCreationSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/DashBoardPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pages/CreateJoinerPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/steps/JoinerCreationSteps.java" />
         <option value="$PROJECT_DIR$/src/test/resources/JoinerCreation.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/BasePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/steps/GeneralSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/steps/DriverGenerator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/JoinerManagerPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/JoinerDetailsInterface.java" />
         <option value="$PROJECT_DIR$/src/test/java/RampUp.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/viewJoinerDetails.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/consultJoiners.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/helpers/DriverGenerator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/steps/ViewJoinerDetailsSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/steps/ConsultJoinersSteps.java" />
+        <option value="$PROJECT_DIR$/src/test/java/steps/JoinerCreationSteps.java" />
       </list>
     </option>
   </component>
@@ -186,6 +182,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GUI_Automatization_challenge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GUI_Automatization_challenge" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="helpers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GUI_Automatization_challenge" type="b2602c69:ProjectViewProjectNode" />
@@ -351,8 +355,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.RampUp" />
-        <item itemvalue="Cucumber java.Scenario: No tasks" />
         <item itemvalue="Cucumber java.Scenario: Filter joiner" />
+        <item itemvalue="Cucumber java.Scenario: No tasks" />
         <item itemvalue="Cucumber java.Scenario: Access to view a Joiners’ details" />
       </list>
     </recent_temporary>
@@ -371,34 +375,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RampUp - 2018.08.31 at 09h 33m 22s.xml">
+    <history-entry file="RampUp - 2018.09.04 at 12h 02m 34s.xml">
       <configuration name="RampUp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RampUp - 2018.08.31 at 10h 08m 14s.xml">
+    <history-entry file="RampUp - 2018.09.04 at 12h 06m 37s.xml">
       <configuration name="RampUp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RampUp - 2018.08.31 at 10h 21m 43s.xml">
+    <history-entry file="RampUp - 2018.09.04 at 12h 08m 39s.xml">
       <configuration name="RampUp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RampUp - 2018.08.31 at 10h 23m 51s.xml">
+    <history-entry file="RampUp - 2018.09.04 at 12h 10m 43s.xml">
       <configuration name="RampUp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RampUp - 2018.08.31 at 11h 32m 58s.xml">
+    <history-entry file="RampUp - 2018.09.04 at 12h 35m 26s.xml">
       <configuration name="RampUp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RampUp - 2018.08.31 at 11h 34m 03s.xml">
+    <history-entry file="RampUp - 2018.09.04 at 12h 43m 50s.xml">
       <configuration name="RampUp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RampUp - 2018.08.31 at 11h 35m 19s.xml">
+    <history-entry file="RampUp - 2018.09.04 at 12h 53m 35s.xml">
       <configuration name="RampUp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RampUp - 2018.08.31 at 11h 49m 51s.xml">
+    <history-entry file="RampUp - 2018.09.04 at 12h 56m 12s.xml">
       <configuration name="RampUp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RampUp - 2018.08.31 at 11h 54m 06s.xml">
+    <history-entry file="RampUp - 2018.09.04 at 13h 40m 41s.xml">
       <configuration name="RampUp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RampUp - 2018.08.31 at 14h 13m 36s.xml">
+    <history-entry file="RampUp - 2018.09.04 at 14h 17m 59s.xml">
       <configuration name="RampUp" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -412,7 +416,7 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.3298969" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.45360824" />
@@ -420,7 +424,6 @@
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24980484" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3298969" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -432,19 +435,20 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3298969" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4621993" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24980484" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.45360824" />
       <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24980484" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -456,7 +460,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info id="Capture Tool" order="6" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3298969" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info id="Favorites" order="5" side_tool="true" />
@@ -471,10 +475,37 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/ConsultJoinersSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="75" column="77" lean-forward="true" selection-start-line="74" selection-start-column="8" selection-end-line="75" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/steps/ViewJoinerDetailsSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="95" column="22" selection-start-line="95" selection-start-column="22" selection-end-line="95" selection-end-column="22" />
+        <state relative-caret-position="816">
+          <caret line="70" column="40" selection-start-line="70" selection-start-column="40" selection-end-line="70" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RampUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/ConsultJoinersSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="75" column="54" selection-start-line="75" selection-start-column="39" selection-end-line="75" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -483,11 +514,76 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/JoinerDetailsInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="38" column="68" selection-start-line="38" selection-start-column="68" selection-end-line="38" selection-end-column="68" />
+        <state relative-caret-position="748">
+          <caret line="52" column="7" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/helpers/DriverGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/ViewJoinerDetailsSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="70" column="40" lean-forward="true" selection-start-line="70" selection-start-column="40" selection-end-line="70" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RampUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/ConsultJoinersSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="75" column="54" selection-start-line="75" selection-start-column="39" selection-end-line="75" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/JoinerDetailsInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="52" column="7" lean-forward="true" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/helpers/DriverGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="16" column="53" lean-forward="true" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/ViewJoinerDetailsSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1241">
+          <caret line="95" column="22" selection-start-line="95" selection-start-column="22" selection-end-line="95" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/JoinerDetailsInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="38" column="68" selection-start-line="38" selection-start-column="68" selection-end-line="38" selection-end-column="68" />
         </state>
       </provider>
     </entry>
@@ -515,9 +611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
           <caret line="53" column="28" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -559,9 +652,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="14" selection-start-column="14" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -569,9 +659,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -579,9 +666,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -589,9 +673,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -609,9 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="15" column="43" lean-forward="true" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -636,9 +714,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -650,40 +725,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/BasePage.kt" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="146" selection-start-line="146" selection-end-line="146" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/helpers/RunnerHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/helpers/NullWebElement.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/helpers/WebDriverFacade.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/BasePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/steps/GlobalSteps.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/DashBoardPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="30" column="29" lean-forward="true" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -691,26 +739,93 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
           <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/CreateJoinerPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/BasePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="44" column="43" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" column="37" lean-forward="true" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/JoinerManagerPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/helpers/RunnerHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="146" selection-start-line="146" selection-end-line="146" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/JoinerDetailsInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="48" column="104" lean-forward="true" selection-start-line="48" selection-start-column="63" selection-end-line="48" selection-end-column="104" />
+        <state relative-caret-position="748">
+          <caret line="52" column="7" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/JoinerCreation.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pages/CreateJoinerPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RampUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/serenity-bdd/serenity-cucumber/1.6.4/serenity-cucumber-1.6.4.jar!/cucumber/runtime/SerenityObjectFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/viewJoinerDetails.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="32" selection-start-column="32" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/consultJoiners.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="31" column="71" selection-start-line="31" selection-start-column="71" selection-end-line="31" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/helpers/DriverGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29">
+          <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -719,8 +834,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/steps/ViewJoinerDetailsSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="92" column="4" selection-start-line="92" selection-start-column="4" selection-end-line="94" selection-end-column="112" />
+        <state relative-caret-position="119">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/steps/ConsultJoinersSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="94" column="29" lean-forward="true" selection-start-line="94" selection-start-column="29" selection-end-line="94" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -729,65 +854,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/steps/JoinerCreationSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="e#1090#1091#0" expanded="true" />
-            <element signature="e#1109#1110#0" expanded="true" />
-            <element signature="e#1087#1088#0" expanded="true" />
-            <element signature="e#1118#1119#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RampUp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/viewJoinerDetails.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="23" selection-start-line="13" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/JoinerCreation.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/steps/ConsultJoinersSteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
-          <caret line="36" column="57" lean-forward="true" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/consultJoiners.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pages/JoinerManagerPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="53" column="28" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="493">
+          <caret line="43" column="96" selection-start-line="43" selection-start-column="96" selection-end-line="43" selection-end-column="96" />
         </state>
       </provider>
     </entry>
