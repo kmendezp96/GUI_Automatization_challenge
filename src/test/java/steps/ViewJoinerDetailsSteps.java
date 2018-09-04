@@ -4,6 +4,7 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import helpers.Checker;
 import helpers.DriverGenerator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
@@ -30,8 +31,6 @@ public class ViewJoinerDetailsSteps {
     DashBoardPage dashBoardPage;
     JoinerManagerPage joinerManagerPage;
     JoinerDetailsInterface joinerDetailsInterface;
-
-    String queryResult;
 
     @Given("^I am logged with email: \"([^\"]*)\" and password \"([^\"]*)\"$")
     public void iAmLoggedWithEmailAndPassword(String email, String password){
@@ -62,23 +61,14 @@ public class ViewJoinerDetailsSteps {
     @Then("^I should see the Joiner Manager interface$")
     public void iShouldSeeTheJoinerManagerInterface(){
         assertThat("The joiners details must not be visible",
-                checkForElementPresence(By.cssSelector("div[class='ui large scrolling modal transition visible active modal-class']")), is(false));
+                Checker.checkForElementPresence(By.cssSelector("div[class='ui large scrolling modal transition visible active modal-class']"), driver), is(false));
         driver.quit();
     }
 
-    boolean checkForElementPresence(By locator)
-    {
-        try {
-            driver.findElement(locator);
-            return true;
-        } catch (NoSuchElementException e) {
-            return false;
-        }
-    }
-
-
     @When("^the Joiner does not have any assigned task$")
     public void theJoinerDoesNotHaveAnyAssignedTask() {
+        assertThat("The joiner must not have assigned tasks",
+                joinerDetailsInterface.checkAssignedTasks(), is(0));
 
 
     }
@@ -86,7 +76,7 @@ public class ViewJoinerDetailsSteps {
     @Then("^I should see the message \"([^\"]*)\" instead of accordion task$")
     public void iShouldSeeTheMessageInsteadOfAccordionTask(String text){
         assertThat("The joiners details must not be visible",
-                checkForElementPresence(By.cssSelector("div[class='details-joiner__empty']")), is(true));
+                Checker.checkForElementPresence(By.cssSelector("div[class='details-joiner__empty']"), driver), is(true));
         assertThat("The joiners details must not be visible",
                 driver.findElement(By.cssSelector("div[class='details-joiner__empty']")).getText(), containsString(text));
     }
@@ -94,7 +84,7 @@ public class ViewJoinerDetailsSteps {
     @And("^It does not appear the accordion´s tasks$")
     public void itDoesNotAppearTheAccordionSTasks(){
         assertThat("The joiners details must not be visible",
-                checkForElementPresence(By.cssSelector("div[class='accordion ui details-joiner']")), is(false));
+                Checker.checkForElementPresence(By.cssSelector("div[class='accordion ui details-joiner']"), driver), is(false));
         driver.quit();
     }
 }

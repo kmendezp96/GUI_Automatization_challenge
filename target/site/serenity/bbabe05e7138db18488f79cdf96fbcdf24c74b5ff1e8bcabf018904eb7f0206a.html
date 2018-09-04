@@ -55,6 +55,7 @@
         <span class="breadcrumbs">
             <a href="index.html" class="breadcrumbs">Home</a>
 
+            > <a href="a5767ea29e19c45787c8e11dd847f40867b680d15a62a84d06909c7aadd666c4.html">Consult Joiners Details</a>
         > Go back to joiner manager interface
         </span>
         </div>
@@ -72,8 +73,11 @@
         <li >
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 04-09-2018 14:17</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 04-09-2018 16:35</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -88,7 +92,7 @@
                             <div>
                                 <h3 class="discreet-story-header">
                                     <i class="fa fa-2x fa-comments-o"></i>
-                                    <span class="story-header-title">Consult Joiners Details</span>
+                                    <span class="story-header-title">Consult Joiners Details </span>
                                 </h3>
 
                                 <div class="discreet-requirement-narrative-title">
@@ -108,9 +112,9 @@ So that It can confirm the joiner was created properly
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span>
                             <span class="test-case-title">
-                                    <span class="error-color">
+                                    <span class="success-color">
                                     Go back to joiner manager interface
                                         <span class="related-issue-title"></span>
                                 </span>
@@ -159,25 +163,102 @@ So that It can confirm the joiner was created properly
                         </div>
                     </td>
                     <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">15.15s</span></td>
+                    <td width="100"><span class="top-level-step">10.95s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         <a name="1"/>
-                            <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                               style="display:block">
+                                <i class="fa fa-plus-square-o imgstepSection1 success-icon"
+                                   style="margin-left: 20px; float:left;  padding-right:5px"></i>
+                            </a>
                     </td>
                     <td>
                         <div class="step-description">
+                            <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                               style="display:block;">
                             <span class="top-level-step">
                                 And the joiner "Kevin" is created
                             </span>
+                            </a>
 
                         </div>
                     </td>
                     <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">4.43s</span></td>
+                    <td width="100"><span class="top-level-step">2.12s</span></td>
                 </tr>
+                    <tr>
+                    <td colspan="5">
+                    <table id="stepSection1" style="display:none; width:100%">
+
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 40px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">
+                                GET http://35.173.104.34:9002/api/joiners
+                            </span>
+
+                                <span class="rest-query">
+                <span>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal"
+                            data-target="#restModal-3">
+                        REST Query
+                    </button>
+                </span>
+                <!-- Modal -->
+                <div class="modal fade" id="restModal-3" tabindex="-1" role="dialog"
+                     aria-labelledby="restModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"
+                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="restModalLabel">
+                                GET http://35.173.104.34:9002/api/joiners
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                    <p>Status code: 200</p>
+                                    <p>Content Type: application/json</p>
+                                    <h5>Request Headers</h5>
+                                    <pre>Accept=*/*<br>Content-Type=application/json; charset=UTF-8</pre>
+                                    <h5>Content Body</h5>
+                                    <pre></pre>
+                                    <h5>Request Cookies</h5>
+                                    <pre></pre>
+                                    <h5>Response Headers</h5>
+                                    <pre>Vary: Origin<br>Date: Tue, 04 Sep 2018 21:35:13 GMT<br>Content-Type: application/json<br>Content-Length: 9024</pre>
+                                <h5>Response Body</h5>
+                                    <pre>[<br>    {<br>        &quot;email&quot;: &quot;NameforJoiner8988955@endava.com&quot;,<br>        &quot;firstName&quot;: &quot;River&quot;,<br>        &quot;lastName&quot;: &quot;Kohler&quot;,<br>        &quot;role&quot;: &quot;des-lead&quot;,<br>        &quot;lineManager&quot;: &quot;gina.acosta@endava.com&quot;,<br>        &quot;mainSkill&quot;: &quot;db&quot;,<br>        &quot;grade&quot;: &quot;SC&quot;,<br>        &quot;discipline&quot;: &quot;pdr&quot;,<br>        &quot;careerCoach&quot;: &quot;andres.kricka@endava.com&quot;,<br>        &quot;buddy&quot;: &quot;victor.mejia@endava.com&quot;<br>    },<br>    {<br>        &quot;email&quot;: &quot;zapata@marcelo.com&quot;,<br>        &quot;firstName&quot;: &quot;Marcelo&quot;,<br>        &quot;lastName&quot;: &quot;Zapata&quot;,<br>        &quot;role&quot;: &quot;developer&quot;,<br>        &quot;lineManager&quot;: &quot;camilo.uribe@endava.com&quot;,<br>        &quot;mainSkill&quot;: &quot;java&quot;,<br>        &quot;grade&quot;: &quot;IN&quot;,<br>        &quot;discipline&quot;: &quot;dev&quot;,<br>        &quot;careerCoach&quot;: &quot;esteban.marin@endava.com&quot;,<br>        &quot;buddy&quot;: &quot;julian.sanchez@endava.com&quot;<br>    },<br>    {<br>        &quot;email&quot;: &quot;Dios@paraiso.com&quot;,<br>        &quot;firstName&quot;: &quot;dd&quot;,<br>        &quot;lastName&quot;: &quot;Murcia&quot;,<br>        &quot;role&quot;: &quot;business-analyst&quot;,<br>        &quot;lineManager&quot;: &quot;fredy.martinez@endava.com&quot;,<br>        &quot;mainSkill&quot;: &quot;java&quot;,<br>        &quot;grade&quot;: &quot;IN&quot;,<br>        &quot;discipline&quot;: &quot;dev&quot;,<br>        &quot;careerCoach&quot;: &quot;hector.prieto@endava.com&quot;,<br>        &quot;buddy&quot;: &quot;victor.mejia@endava.com&quot;<br>    },<br>    {<br>        &quot;email&quot;: &quot;neymar@madrid.com&quot;,<br>        &quot;firstName&quot;: &quot;Neymar&quot;,<br>        &quot;lastName&quot;: &quot;Jr&quot;,<br>        &quot;role&quot;: &quot;principal-analyst&quot;,<br>        &quot;lineManager&quot;: &quot;victor.mejia@endava.com&quot;,<br>        &quot;mainSkill&quot;: &quot;java&quot;,<br>        &quot;grade&quot;: &quot;IN&quot;,<br>        &quot;discipline&quot;: &quot;test&quot;,<br>        &quot;careerCoach&quot;: &quot;angy.muñoz@endava.com&quot;,<br>        &quot;buddy&quot;: &quot;julian.duque@endava.com&quot;<br>    },<br>    {<br>        &quot;email&quot;: &quot;Name4762315@endava.com&quot;,<br>        &quot;firstName&quot;: &quot;Harvey&quot;,<br>        &quot;lastName&quot;: &quot;Hettinger&quot;,<br>        &quot;role&quot;: &quot;sw-tester&quot;,<br>        &quot;lineManager&quot;: &quot;gina.acosta@endava.com&quot;,<br>        &quot;mainSkill&quot;: &quot;visual-design&quot;,<br>        &quot;grade&quot;: &quot;BM&quot;,<br>        &quot;discipline&quot;: &quot;pdr&quot;,<br>        &quot;careerCoach&quot;: &quot;hector.prieto@endava.com&quot;,<br>        &quot;buddy&quot;: &quot;luis.cañaveral@endava.com&quot;<br>    },<br>    {<br>        &quot;email&quot;: &quot;NameforJoiner3207082@endava.com&quot;,<br>        &quot;firstName&quot;: &quot;Percival&quot;,<br>        &quot;lastName&quot;: &quot;Paucek&quot;,<br>        &quot;role&quot;: &quot;pm&quot;,<br>        &quot;lineManager&quot;: &quot;julian.duque@endava.com&quot;,<br>        &quot;mainSkill&quot;: &quot;visual-design&quot;,<br>        &quot;grade&quot;: &quot;SE&quot;,<br>        &quot;discipline&quot;: &quot;ba&quot;,<br>        &quot;careerCoach&quot;: &quot;angy.muñoz@endava.com&quot;,<br>        &quot;buddy&quot;: &quot;andres.calle@endava.com&quot;<br>    },<br>    {<br>        &quot;email&quot;: &quot;libardo.corregidor@endava.com&quot;,<br>        &quot;firstName&quot;: &quot;Edward&quot;,<br>        &quot;lastName&quot;: &quot;Corregidor&quot;,<br>        &quot;role&quot;: &quot;sw-tester&quot;,<br>        &quot;lineManager&quot;: &quot;andres.calle@endava.com&quot;,<br>        &quot;mainSkill&quot;: &quot;java&quot;,<br>        &quot;grade&quot;: &quot;EN&quot;,<br>        &quot;discipline&quot;: &quot;test&quot;,<br>        &quot;careerCoach&quot;: &quot;gina.acosta@endava.com&quot;,<br>        &quot;buddy&quot;: &quot;andres.rincon@endava.com&quot;<br>    },<br>    {<br>        &quot;email&quot;: &quot;cgonzalez@gmail.com&quot;,<br>        &quot;firstName&quot;: &quot;H&quot;,<br>        &quot;lastName&quot;: &quot;Paz&quot;,<br>        &quot;role&quot;: &quot;principal-analyst&quot;,<br>        &quot;lineManager&quot;: &quot;camilo.uribe@endava.com&quot;,<br>        &quot;mainSkill&quot;: &quot;db&quot;,<br>        &quot;grade&quot;: &quot;SE&quot;,<br>        &quot;discipline&quot;: &quot;dev&quot;,<br>        &quot;careerCoach&quot;: &quot;esteban.marin@endava.com&quot;,<br>        &quot;buddy&quot;: &quot;julian.sanchez@endava.com&quot;<br>    },<br>    {<br>        &quot;email&quot;: &quot;raul@gonzalez.com&quot;,<br>        &quot;firstName&quot;: &quot;Raul&quot;,<br>        &quot;lastName&quot;: &quot;Gonzalez&quot;,<br>        &quot;role&quot;: &quot;developer&quot;,<br>        &quot;lineManager&quot;: &quot;camilo.uribe@endava.com&quot;,<br>        &quot;mainSkill&quot;: &quot;android&quot;,<br>        &quot;grade&quot;: &quot;IN&quot;,<br>        &quot;discipline&quot;: &quot;dev&quot;,<br>        &quot;careerCoach&quot;: &quot;esteban.marin@endava.com&quot;,<br>        &quot;buddy&quot;: &quot;julian.sanchez@endava.com&quot;<br>    },<br>    {<br>        &quot;email&quot;: &quot;NameforJoiner3564710@endava.com&quot;,<br>        &quot;firstName&quot;: &quot;Jaida&quot;,<br>        &quot;lastName&quot;: &quot;Bashirian&quot;,<br>        &quot;role&quot;: &quot;des-lead&quot;,<br>        &quot;lineManager&quot;: &quot;fredy.martinez@endava.com&quot;,<br>        &quot;mainSkill&quot;: &quot;db&quot;,<br>        &quot;grade&quot;: &quot;DR&quot;,<br>        &quot;discipline&quot;: &quot;finance&quot;,<br>        &quot;careerCoach&quot;: &quot;andres.calle@endava.com&quot;,<br>        &quot;buddy&quot;: &quot;paulo.arias@endava.com&quot;<br>    },<br>    {<br>        &quot;email&quot;: &quot;manuel@garcia.com&quot;,<br>        &quot;firstName&quot;: &quot;Manuel&quot;,<br>        &quot;lastName&quot;: &quot;Garcia&quot;,<br>        &quot;role&quot;: &quot;developer&quot;,<br>        &quot;lineManager&quot;: &quot;camilo.uribe@endava.com&quot;,<br>        &quot;mainSkill&quot;: &quot;android&quot;,<br>        &quot;grade&quot;: &quot;IN&quot;,<br>        &quot;discipline&quot;: &quot;dev&quot;,<br>        &quot;careerCoach&quot;: &quot;esteban.marin@endava.com&quot;,<br>        &quot;buddy&quot;: &quot;julian.sanchez@endava.com&quot;<br>    },<br>    {<br>        &quot;email&quot;: &quot;Diospeque@paraiso.com&quot;,<br>        &quot;firstName&quot;: &quot;Jesus&quot;,<br>        &quot;lastName&quot;: &quot;Nazareno&quot;,<br>        &quot;role&quot;: &quot;business-analyst&quot;,<br>        &quot;lineManager&quot;: &quot;camilo.uribe@endava.com&quot;,<br>        &quot;mainSkill&quot;: &quot;java&quot;,<br>        &quot;grade&quot;: &quot;IN&quot;,<br>        &quot;discipline&quot;: &quot;dev&quot;,<br>        &quot;careerCoach&quot;: &quot;esteban.marin@endava.com&quot;,<br>        &quot;buddy&quot;: &quot;julian.sanchez@endava.com&quot;<br>    },<br>    {<br>        &quot;email&quot;: &quot;cecilia@gonzalez.com&quot;,<br>        &quot;firstName&quot;: &quot;Cecilia&quot;,<br>        &quot;lastName&quot;: &quot;Gonzalez&quot;,<br>        &quot;role&quot;: &quot;developer&quot;,<br>        &quot;lineManager&quot;: &quot;camilo.uribe@endava.com&quot;,<br>        &quot;mainSkill&quot;: &quot;java&quot;,<br>        &quot;grade&quot;: &quot;IN&quot;,<br>        &quot;discipline&quot;: &quot;dev&quot;,<br>        &quot;careerCoach&quot;: &quot;esteban.marin@endava.com&quot;,<br>        &quot;buddy&quot;: &quot;julian.sanchez@endava.com&quot;<br>    },<br>    {<br>        &quot;email&quot;: &quot;Joiner2702889@endava.com&quot;,<br>        &quot;firstName&quot;: &quot;Martine&quot;,<br>        &quot;lastName&quot;: &quot;Lehner&quot;,<br>        &quot;role&quot;: &quot;business-analyst&quot;,<br>        &quot;lineManager&quot;: &quot;david.quintana@endava.com&quot;,<br>        &quot;mainSkill&quot;: &quot;java&quot;,<br>        &quot;grade&quot;: &quot;ST&quot;,<br>        &quot;discipline&quot;: &quot;dev&quot;,<br>        &quot;careerCoach&quot;: &quot;german.valencia@endava.com&quot;,<br>        &quot;buddy&quot;: &quot;german.valencia@endava.com&quot;<br>    },<br>    {<br>        &quot;email&quot;: &quot;dmg@piramide.com&quot;,<br>        &quot;firstName&quot;: &quot;David &quot;,<br>        &quot;lastName&quot;: &quot;Murcia&quot;,<br>        &quot;role&quot;: &quot;principal-analyst&quot;,<br>        &quot;lineManager&quot;: &quot;andres.calle@endava.com&quot;,<br>        &quot;mainSkill&quot;: &quot;visual-design&quot;,<br>        &quot;grade&quot;: &quot;DR&quot;,<br>        &quot;discipline&quot;: &quot;test&quot;,<br>        &quot;careerCoach&quot;: &quot;gina.acosta@endava.com&quot;,<br>        &quot;buddy&quot;: &quot;andres.rincon@endava.com&quot;<br>    },<br>    {<br>        &quot;email&quot;: &quot;andres.mojica@endava.com&quot;,<br>        &quot;firstName&quot;: &quot;Andres&quot;,<br>        &quot;lastName&quot;: &quot;Mojica&quot;,<br>        &quot;role&quot;: &quot;sw-tester&quot;,<br>        &quot;lineManager&quot;: &quot;jeison.borja@endava.com&quot;,<br>        &quot;mainSkill&quot;: &quot;unix&quot;,<br>        &quot;grade&quot;: &quot;ST&quot;,<br>        &quot;discipline&quot;: &quot;finance&quot;,<br>        &quot;careerCoach&quot;: &quot;carol.bohorquez@endava.com&quot;,<br>        &quot;buddy&quot;: &quot;julian.duque@endava.com&quot;<br>    },<br>    {<br>        &quot;email&quot;: &quot;diablo@infierno.com&quot;,<br>        &quot;firstName&quot;: &quot;Diablo&quot;,<br>        &quot;lastName&quot;: &quot;Cuernudo&quot;,<br>        &quot;role&quot;: &quot;business-analyst&quot;,<br>        &quot;lineManager&quot;: &quot;german.valencia@endava.com&quot;,<br>        &quot;mainSkill&quot;: &quot;ios&quot;,<br>        &quot;grade&quot;: &quot;IN&quot;,<br>        &quot;discipline&quot;: &quot;test&quot;,<br>        &quot;careerCoach&quot;: &quot;jeison.borja@endava.com&quot;,<br>        &quot;buddy&quot;: &quot;victor.mejia@endava.com&quot;<br>    },<br>    {<br>        &quot;email&quot;: &quot;JoinerName7144019@endava.com&quot;,<br>        &quot;firstName&quot;: &quot;Jessika&quot;,<br>        &quot;lastName&quot;: &quot;Nolan&quot;,<br>        &quot;role&quot;: &quot;devops-en&quot;,<br>        &quot;lineManager&quot;: &quot;mario.ceron@endava.com&quot;,<br>        &quot;mainSkill&quot;: &quot;.net&quot;,<br>        &quot;grade&quot;: &quot;TL&quot;,<br>        &quot;discipline&quot;: &quot;hrc&quot;,<br>        &quot;careerCoach&quot;: &quot;julian.duque@endava.com&quot;,<br>        &quot;buddy&quot;: &quot;jeison.borja@endava.com&quot;<br>    },<br>    {<br>        &quot;email&quot;: &quot;lourdes.montes@endava.com&quot;,<br>        &quot;firstName&quot;: &quot;Lourdes&quot;,<br>        &quot;lastName&quot;: &quot;Montes&quot;,<br>        &quot;role&quot;: &quot;sw-tester&quot;,<br>        &quot;lineManager&quot;: &quot;andres.calle@endava.com&quot;,<br>        &quot;mainSkill&quot;: &quot;java&quot;,<br>        &quot;grade&quot;: &quot;IN&quot;,<br>        &quot;discipline&quot;: &quot;test&quot;,<br>        &quot;careerCoach&quot;: &quot;gina.acosta@endava.com&quot;,<br>        &quot;buddy&quot;: &quot;andres.rincon@endava.com&quot;<br>    },<br>    {<br>        &quot;email&quot;: &quot;flores@ricardo.com&quot;,<br>        &quot;firstName&quot;: &quot;Ricardo&quot;,<br>        &quot;lastName&quot;: &quot;Florez&quot;,<br>        &quot;role&quot;: &quot;des-lead&quot;,<br>        &quot;lineManager&quot;: &quot;camilo.uribe@endava.com&quot;,<br>        &quot;mainSkill&quot;: &quot;.net&quot;,<br>        &quot;grade&quot;: &quot;JT&quot;,<br>        &quot;discipline&quot;: &quot;dev&quot;,<br>        &quot;careerCoach&quot;: &quot;esteban.marin@endava.com&quot;,<br>        &quot;buddy&quot;: &quot;julian.sanchez@endava.com&quot;<br>    },<br>    {<br>        &quot;email&quot;: &quot;Name1323535@endava.com&quot;,<br>        &quot;firstName&quot;: &quot;Aliya&quot;,<br>        &quot;lastName&quot;: &quot;West&quot;,<br>        &quot;role&quot;: &quot;des-lead&quot;,<br>        &quot;lineManager&quot;: &quot;andres.kricka@endava.com&quot;,<br>        &quot;mainSkill&quot;: &quot;ux&quot;,<br>        &quot;grade&quot;: &quot;TL&quot;,<br>        &quot;discipline&quot;: &quot;finance&quot;,<br>        &quot;careerCoach&quot;: &quot;andres.kricka@endava.com&quot;,<br>        &quot;buddy&quot;: &quot;david.quintana@endava.com&quot;<br>    },<br>    {<br>        &quot;email&quot;: &quot;segura@marcela.com&quot;,<br>        &quot;firstName&quot;: &quot;Marcela&quot;,<br>        &quot;lastName&quot;: &quot;Segura&quot;,<br>        &quot;role&quot;: &quot;developer&quot;,<br>        &quot;lineManager&quot;: &quot;camilo.uribe@endava.com&quot;,<br>        &quot;mainSkill&quot;: &quot;java&quot;,<br>        &quot;grade&quot;: &quot;IN&quot;,<br>        &quot;discipline&quot;: &quot;dev&quot;,<br>        &quot;careerCoach&quot;: &quot;esteban.marin@endava.com&quot;,<br>        &quot;buddy&quot;: &quot;julian.sanchez@endava.com&quot;<br>    },<br>    {<br>        &quot;email&quot;: &quot;6115@gmail.com&quot;,<br>        &quot;firstName&quot;: &quot;Heiner&quot;,<br>        &quot;lastName&quot;: &quot;Gomez&quot;,<br>        &quot;role&quot;: &quot;developer&quot;,<br>        &quot;lineManager&quot;: &quot;andres.calle@endava.com&quot;,<br>        &quot;mainSkill&quot;: &quot;java&quot;,<br>        &quot;grade&quot;: &quot;IN&quot;,<br>        &quot;discipline&quot;: &quot;test&quot;,<br>        &quot;careerCoach&quot;: &quot;gina.acosta@endava.com&quot;,<br>        &quot;buddy&quot;: &quot;andres.rincon@endava.com&quot;<br>    },<br>    {<br>        &quot;email&quot;: &quot;carlos@bacca.com&quot;,<br>        &quot;firstName&quot;: &quot;Bacca&quot;,<br>        &quot;lastName&quot;: &quot;Carlos&quot;,<br>        &quot;role&quot;: &quot;developer&quot;,<br>        &quot;lineManager&quot;: &quot;camilo.uribe@endava.com&quot;,<br>        &quot;mainSkill&quot;: &quot;java&quot;,<br>        &quot;grade&quot;: &quot;IN&quot;,<br>        &quot;discipline&quot;: &quot;dev&quot;,<br>        &quot;careerCoach&quot;: &quot;esteban.marin@endava.com&quot;,<br>        &quot;buddy&quot;: &quot;julian.sanchez@endava.com&quot;<br>    },<br>    {<br>        &quot;email&quot;: &quot;Kevin.Mendez@endava.com&quot;,<br>        &quot;firstName&quot;: &quot;Kevin&quot;,<br>        &quot;lastName&quot;: &quot;Mendez&quot;,<br>        &quot;role&quot;: &quot;developer&quot;,<br>        &quot;lineManager&quot;: &quot;andres.calle@endava.com&quot;,<br>        &quot;mainSkill&quot;: &quot;java&quot;,<br>        &quot;grade&quot;: &quot;IN&quot;,<br>        &quot;discipline&quot;: &quot;test&quot;,<br>        &quot;careerCoach&quot;: &quot;raul.fandino@endava.com&quot;,<br>        &quot;buddy&quot;: &quot;andres.rincon@endava.com&quot;<br>    },<br>    {<br>        &quot;email&quot;: &quot;Joiner9053917@endava.com&quot;,<br>        &quot;firstName&quot;: &quot;Pamela&quot;,<br>        &quot;lastName&quot;: &quot;Dietrich&quot;,<br>        &quot;role&quot;: &quot;am-eng&quot;,<br>        &quot;lineManager&quot;: &quot;hector.prieto@endava.com&quot;,<br>        &quot;mainSkill&quot;: &quot;db&quot;,<br>        &quot;grade&quot;: &quot;CL&quot;,<br>        &quot;discipline&quot;: &quot;pm&quot;,<br>        &quot;careerCoach&quot;: &quot;luz.fernandez@endava.com&quot;,<br>        &quot;buddy&quot;: &quot;lorena.melan@endava.com&quot;<br>    },<br>    {<br>        &quot;email&quot;: &quot;JoinerName4793338@endava.com&quot;,<br>        &quot;firstName&quot;: &quot;Julianne&quot;,<br>        &quot;lastName&quot;: &quot;Christiansen&quot;,<br>        &quot;role&quot;: &quot;test-lead&quot;,<br>        &quot;lineManager&quot;: &quot;mario.ceron@endava.com&quot;,<br>        &quot;mainSkill&quot;: &quot;ux&quot;,<br>        &quot;grade&quot;: &quot;SC&quot;,<br>        &quot;discipline&quot;: &quot;ba&quot;,<br>        &quot;careerCoach&quot;: &quot;lorena.melan@endava.com&quot;,<br>        &quot;buddy&quot;: &quot;lorena.melan@endava.com&quot;<br>    },<br>    {<br>        &quot;email&quot;: &quot;NameforJoiner6940791@endava.com&quot;,<br>        &quot;firstName&quot;: &quot;Adeline&quot;,<br>        &quot;lastName&quot;: &quot;Waelchi&quot;,<br>        &quot;role&quot;: &quot;developer&quot;,<br>        &quot;lineManager&quot;: &quot;andres.calle@endava.com&quot;,<br>        &quot;mainSkill&quot;: &quot;java&quot;,<br>        &quot;grade&quot;: &quot;SE&quot;,<br>        &quot;discipline&quot;: &quot;dev&quot;,<br>        &quot;careerCoach&quot;: &quot;andres.rincon@endava.com&quot;,<br>        &quot;buddy&quot;: &quot;lorena.melan@endava.com&quot;<br>    },<br>    {<br>        &quot;email&quot;: &quot;NameforJoiner3142240@endava.com&quot;,<br>        &quot;firstName&quot;: &quot;Deontae&quot;,<br>        &quot;lastName&quot;: &quot;Durgan&quot;,<br>        &quot;role&quot;: &quot;des-lead&quot;,<br>        &quot;lineManager&quot;: &quot;luz.fernandez@endava.com&quot;,<br>        &quot;mainSkill&quot;: &quot;visual-design&quot;,<br>        &quot;grade&quot;: &quot;ML&quot;,<br>        &quot;discipline&quot;: &quot;test&quot;,<br>        &quot;careerCoach&quot;: &quot;esteban.marin@endava.com&quot;,<br>        &quot;buddy&quot;: &quot;david.quintana@endava.com&quot;<br>    },<br>    {<br>        &quot;email&quot;: &quot;615515@gmail.com&quot;,<br>        &quot;firstName&quot;: &quot;Heiner&quot;,<br>        &quot;lastName&quot;: &quot;Gomez&quot;,<br>        &quot;role&quot;: &quot;developer&quot;,<br>        &quot;lineManager&quot;: &quot;andres.calle@endava.com&quot;,<br>        &quot;mainSkill&quot;: &quot;java&quot;,<br>        &quot;grade&quot;: &quot;IN&quot;,<br>        &quot;discipline&quot;: &quot;test&quot;,<br>        &quot;careerCoach&quot;: &quot;gina.acosta@endava.com&quot;,<br>        &quot;buddy&quot;: &quot;andres.rincon@endava.com&quot;<br>    },<br>    {<br>        &quot;email&quot;: &quot;Name645820@endava.com&quot;,<br>        &quot;firstName&quot;: &quot;Tressie&quot;,<br>        &quot;lastName&quot;: &quot;Krajcik&quot;,<br>        &quot;role&quot;: &quot;test-lead&quot;,<br>        &quot;lineManager&quot;: &quot;felipe.vila@endava.com&quot;,<br>        &quot;mainSkill&quot;: &quot;.net&quot;,<br>        &quot;grade&quot;: &quot;EN&quot;,<br>        &quot;discipline&quot;: &quot;dev&quot;,<br>        &quot;careerCoach&quot;: &quot;farid.hosman@endava.com&quot;,<br>        &quot;buddy&quot;: &quot;felipe.vila@endava.com&quot;<br>    },<br>    {<br>        &quot;email&quot;: &quot;NameforJoiner2219390@endava.com&quot;,<br>        &quot;firstName&quot;: &quot;Rosalee&quot;,<br>        &quot;lastName&quot;: &quot;Kuphal&quot;,<br>        &quot;role&quot;: &quot;am-eng&quot;,<br>        &quot;lineManager&quot;: &quot;angy.muñoz@endava.com&quot;,<br>        &quot;mainSkill&quot;: &quot;unix&quot;,<br>        &quot;grade&quot;: &quot;TL&quot;,<br>        &quot;discipline&quot;: &quot;ba&quot;,<br>        &quot;careerCoach&quot;: &quot;jimmy.alvarez@endava.com&quot;,<br>        &quot;buddy&quot;: &quot;andres.calle@endava.com&quot;<br>    },<br>    {<br>        &quot;email&quot;: &quot;JoinerName4336017@endava.com&quot;,<br>        &quot;firstName&quot;: &quot;Angelina&quot;,<br>        &quot;lastName&quot;: &quot;Auer&quot;,<br>        &quot;role&quot;: &quot;sw-tester&quot;,<br>        &quot;lineManager&quot;: &quot;esteban.marin@endava.com&quot;,<br>        &quot;mainSkill&quot;: &quot;java&quot;,<br>        &quot;grade&quot;: &quot;CL&quot;,<br>        &quot;discipline&quot;: &quot;ba&quot;,<br>        &quot;careerCoach&quot;: &quot;andres.gomez@endava.com&quot;,<br>        &quot;buddy&quot;: &quot;raul.fandino@endava.com&quot;<br>    },<br>    {<br>        &quot;email&quot;: &quot;JoinerName3665046@endava.com&quot;,<br>        &quot;firstName&quot;: &quot;Destany&quot;,<br>        &quot;lastName&quot;: &quot;Weissnat&quot;,<br>        &quot;role&quot;: &quot;am-eng&quot;,<br>        &quot;lineManager&quot;: &quot;andres.kricka@endava.com&quot;,<br>        &quot;mainSkill&quot;: &quot;.net&quot;,<br>        &quot;grade&quot;: &quot;ST&quot;,<br>        &quot;discipline&quot;: &quot;finance&quot;,<br>        &quot;careerCoach&quot;: &quot;hector.prieto@endava.com&quot;,<br>        &quot;buddy&quot;: &quot;luis.cañaveral@endava.com&quot;<br>    }<br>]</pre>
+                                    <h5>Response Cookies</h5>
+                                    <pre></pre>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                </span>
+
+                        </div>
+                    </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0s</span></td>
+                </tr>
+
+                    </table>
+                    </td>
+                    <tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         <a name="2"/>
@@ -193,13 +274,13 @@ So that It can confirm the joiner was created properly
                         </div>
                     </td>
                     <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">1.76s</span></td>
+                    <td width="100"><span class="top-level-step">0.52s</span></td>
                 </tr>
-                <tr class="test-ERROR">
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         <a name="3"/>
                             <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></span>
+                                  class="top-level-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
@@ -209,62 +290,14 @@ So that It can confirm the joiner was created properly
 
                         </div>
                     </td>
-                    <td width="100"><span class="top-level-step">ERROR</span></td>
-                    <td width="100"><span class="top-level-step">0.67s</span></td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">0.36s</span></td>
                 </tr>
-                    <tr class="test-ERROR">
-                        <td width="40">&nbsp</td>
-                        <td width="%" colspan="4" class="error-message-cell">
-                            <div class="error-message ellipsis"
-                                 title='Element not visible exception: element not visible  (Session info: chrome=58.0.3029.81)  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 0 millisecondsBuild info: version: &#39;3.14.0&#39;, revision: &#39;aacccce0&#39;, time: &#39;2018-08-02T20:19:58.91Z&#39;System info: host: &#39;EN911016&#39;, ip: &#39;10.0.75.1&#39;, os.name: &#39;Windows 10&#39;, os.arch: &#39;amd64&#39;, os.version: &#39;10.0&#39;, java.version: &#39;1.8.0_181&#39;Driver info: org.openqa.selenium.remote.RemoteWebDriverCapabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.29.461591 (62ebf098771772..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasMetadata: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 58.0.3029.81, webStorageEnabled: true, webdriver.remote.sessionid: 64ca852a04a941d2897887ffb19...}Session ID: 64ca852a04a941d2897887ffb1920854Build info: version: &#39;3.14.0&#39;, revision: &#39;aacccce0&#39;, time: &#39;2018-08-02T20:19:58.91Z&#39;System info: host: &#39;EN911016&#39;, ip: &#39;10.0.75.1&#39;, os.name: &#39;Windows 10&#39;, os.arch: &#39;amd64&#39;, os.version: &#39;10.0&#39;, java.version: &#39;1.8.0_181&#39;Driver info: driver.version: unknown'>
-                                <pre>Element not visible exception: element not visible  (Session info: chrome=58.0.3029.81)  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not pr...</pre>
-                            </div>
-                <div><!-- Stack trace -->
-                    <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"
-                            data-target="#stacktraceModal-4">
-                        View stack trace
-                    </button>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="stacktraceModal-4" tabindex="-1" role="dialog"
-                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"
-                                        aria-label="Close"><span aria-hidden="true">&times;</span>
-                                </button>
-                                <h4 class="modal-title" id="stacktraceModalLabel">
-                                org.openqa.selenium.ElementNotVisibleException
-                                </h4>
-                            </div>
-                            <div class="modal-body">
-                                    <h5>
-                                        <pre>element not visible<br>  (Session info: chrome=58.0.3029.81)<br>  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)<br>Command duration or timeout: 0 milliseconds<br>Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'<br>System info: host: 'EN911016', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'<br>Driver info: org.openqa.selenium.remote.RemoteWebDriver<br>Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.29.461591 (62ebf098771772..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasMetadata: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 58.0.3029.81, webStorageEnabled: true, webdriver.remote.sessionid: 64ca852a04a941d2897887ffb19...}<br>Session ID: 64ca852a04a941d2897887ffb1920854<br>Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'<br>System info: host: 'EN911016', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'<br>Driver info: driver.version: unknown</pre>
-                                    </h5>
-                                pages.JoinerDetailsInterface.goBack(JoinerDetailsInterface.java
-                                    :58) <br>
-                                steps.ViewJoinerDetailsSteps.iSelectTheCloseOption(ViewJoinerDetailsSteps.java
-                                    :59) <br>
-                                ✽.I select the Close option(src/test/resources/viewJoinerDetails.feature
-                                    :14) <br>
-                            </div>
-
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">
-                                    Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                        </td>
-                    </tr>
-                <tr class="test-SKIPPED">
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         <a name="4"/>
                             <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></span>
+                                  class="top-level-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
@@ -274,13 +307,13 @@ So that It can confirm the joiner was created properly
 
                         </div>
                     </td>
-                    <td width="100"><span class="top-level-step">SKIPPED</span></td>
-                    <td width="100"><span class="top-level-step">0s</span></td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">4.84s</span></td>
                 </tr>
-                <tr class="test-ERROR">
+                <tr class="test-SUCCESS">
                     <td colspan="2"></td>
-                    <td width="100"><span class="top-level-step"><em>ERROR</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>22.01s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>SUCCESS</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>18.79s</em></span></td>
                 </tr>
 
             </table>

@@ -1,5 +1,6 @@
 package steps;
 
+import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -23,14 +24,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.List;
 
 public class ConsultJoinersSteps extends RunnerHelper {
-    WebDriver driver = new ChromeDriver();
+    private WebDriver driver = new ChromeDriver();
     //WebDriver driver = DriverGenerator.generateDriver();
-    WebDriverWait wait = new WebDriverWait(driver, Long.parseLong("10"));
+    private WebDriverWait wait = new WebDriverWait(driver, Long.parseLong("5"));
 
-    DashBoardPage dashBoardPage;
-    JoinerManagerPage joinerManagerPage;
-    JoinerDetailsInterface joinerDetailsInterface;
-    String queryResult;
+    private DashBoardPage dashBoardPage;
+    private JoinerManagerPage joinerManagerPage;
+    private JoinerDetailsInterface joinerDetailsInterface;
+    private String queryResult;
 
     @Given("^I am already logged with email: \"([^\"]*)\" and password \"([^\"]*)\"$")
     public void iAmAlreadyLoggedWithEmailAndPassword(String email, String password) {
@@ -91,16 +92,24 @@ public class ConsultJoinersSteps extends RunnerHelper {
     @Then("^I should see the list of all existing Joiners included \"([^\"]*)\"$")
     public void iShouldSeeTheListOfAllExistingJoinersIncluded(String name){
 
-        List<WebElement> links = driver.findElement(By.cssSelector("table[class='ui celled table']" )).findElements(By.tagName("a"));
-        boolean cond = false;
+        /*List<WebElement> links = driver.findElement(By.cssSelector("table[class='ui celled table']" )).findElements(By.tagName("a"));
+        boolean some = false;
         for(int i = 0;i<links.size();i++){
             if(links.get(i).getText().contains(name)){
-                cond = true;
+                some = true;
             }
         }
         assertThat("A new pop up must be visible",
-               cond,is(true)
-                );
+                some,is(true)
+                );*/
+
+    }
+
+    @Then("^I should see the list of all existing Joiners$")
+    public void iShouldSeeTheListOfAllExistingJoiners() {
+        assertThat("All the joiners must be listed",
+                joinerManagerPage.checkNumberOfJoiners(),is(true)
+        );
         driver.quit();
     }
 }

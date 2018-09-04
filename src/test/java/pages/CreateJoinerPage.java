@@ -1,5 +1,6 @@
 package pages;
 
+import helpers.Checker;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -47,20 +48,12 @@ public class CreateJoinerPage extends BasePage {
         buddyField.findElements(By.xpath("//div[contains(.,'"+buddy+"')]"));
         careerCoachField.findElements(By.xpath("//div[contains(.,'"+careerCoach+"')]"));
         lineManagerField.findElements(By.xpath("//div[contains(.,'"+LineManager+"')]"));
-        return checkForElementPresence(buddyField, By.xpath("//div[contains(.,'"+buddy+"')]")) &&
-                checkForElementPresence(careerCoachField, By.xpath("//div[contains(.,'"+careerCoach+"')]")) &&
-                        checkForElementPresence(lineManagerField,By.xpath("//div[contains(.,'"+LineManager+"')]"));
+        return Checker.checkForElementPresence(buddyField, By.xpath("//div[contains(.,'"+buddy+"')]"), driver) &&
+                Checker.checkForElementPresence(careerCoachField, By.xpath("//div[contains(.,'"+careerCoach+"')]"), driver) &&
+                Checker.checkForElementPresence(lineManagerField,By.xpath("//div[contains(.,'"+LineManager+"')]"), driver);
 
     }
 
-    boolean checkForElementPresence(WebElement parentElement,By locator)
-    {
-        try {
-            parentElement.findElement(locator);
-            return true;
-        } catch (NoSuchElementException e) {
-            return false;
-        }
-    }
+
 
 }

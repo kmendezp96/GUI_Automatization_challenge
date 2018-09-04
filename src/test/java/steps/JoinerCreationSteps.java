@@ -15,11 +15,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class JoinerCreationSteps {
     WebDriver driver = new ChromeDriver();
     //WebDriver driver = DriverGenerator.generateDriver();
-    WebDriverWait wait = new WebDriverWait(driver, Long.parseLong("10"));
 
-    DashBoardPage dashBoardPage;
-    CreateJoinerPage createJoinerPage;
-    String queryResult;
+    private DashBoardPage dashBoardPage;
+    private CreateJoinerPage createJoinerPage;
 
     @Given("^I am already logged using email: \"([^\"]*)\" and password \"([^\"]*)\"$")
     public void iAmAlreadyLoggedUsingEmailAndPassword(String email, String password) {

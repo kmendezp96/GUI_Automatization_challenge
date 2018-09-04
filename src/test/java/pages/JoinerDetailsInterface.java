@@ -1,5 +1,8 @@
 package pages;
 
+import helpers.JsonHelper;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,6 +12,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
+
+import static net.serenitybdd.rest.SerenityRest.given;
 
 public class JoinerDetailsInterface extends BasePage{
     private WebDriver driver;
@@ -24,6 +29,9 @@ public class JoinerDetailsInterface extends BasePage{
     private WebElement accordion;
     @FindBy(how = How.XPATH, using = "//button[contains(.,'Assign Tasks')]")
     private WebElement assignButton;
+
+    @FindBy(how = How.NAME, using = "email")
+    private WebElement emailField;
 
     /*private static JoinerDetailsInterface joinerDetailsInterface;
 
@@ -60,10 +68,13 @@ public class JoinerDetailsInterface extends BasePage{
 
     }
 
-/*
-    public void checkAssignedTasks(){
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("div[class='accordion ui details-joiner']")));
-        accordion = driver.findElement(By.cssSelector("div[class='accordion ui details-joiner']"));
-    }*/
+
+    public int checkAssignedTasks(){
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.name("email")));
+        RequestSpecification request = given().contentType("application/json");
+        Response response = request.when().get("http://35.173.104.34:9003/api/rampups?owner="+emailField);
+        return JsonHelper.getJsonObjectListFromResponse(response).size();
+    }
 
 }
